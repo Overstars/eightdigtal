@@ -22,7 +22,7 @@ int bfs(string s)
 {
 	unordered_map<string,int>vis;
 	queue<string>q;
-	string target="123804765";
+	string target="123456780";//"123804765";
 	int nx[]={0,1,0,-1},ny[]={1,0,-1,0};
 	vis[s]=0;
 	q.push(s);
@@ -62,5 +62,7 @@ signed main(signed argc, char const *argv[])
 	cout<<bfs(s)<<endl;
 	return 0;
 }
-
+/*
+673014582
+*/
 

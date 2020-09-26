@@ -28,7 +28,7 @@ void show(const string &s)
 }
 list<string>ans;
 unordered_map<string,bool>vis;
-string target="123804765";
+string target="123456780";//"123804765";
 int nx[]={0,1,0,-1},ny[]={1,0,-1,0},lim=INT_MAX;
 bool ok=0;
 void dfs(string s,int depth)
@@ -36,7 +36,7 @@ void dfs(string s,int depth)
 	if(vis[s]||ok||depth>lim)//与普通dfs区别只有深度限制
 		return;
 	ans.push_back(s);
-	show(s);
+//	show(s);
 	if(s==target)
 	{
 		ok=1;
